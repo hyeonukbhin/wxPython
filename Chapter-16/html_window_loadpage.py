@@ -8,8 +8,10 @@ class MyHtmlFrame(wx.Frame):
         if "gtk2" in wx.PlatformInfo:
             html.SetStandardFonts()
 
+        # wx.CallAfter(
+        #     html.LoadPage, "http://wxwidgets.org/manuals/2.6.2/wx_wxbutton.html")
         wx.CallAfter(
-            html.LoadPage, "http://wxwidgets.org/manuals/2.6.2/wx_wxbutton.html")
+            html.LoadPage, "http://google.com")
 
 app = wx.PySimpleApp()
 frm = MyHtmlFrame(None, "Simple HTML Browser")

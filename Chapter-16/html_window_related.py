@@ -12,8 +12,11 @@ class MyHtmlFrame(wx.Frame):
         html.SetRelatedFrame(self, self.GetTitle() + " -- %s")
         html.SetRelatedStatusBar(0)
 
+        # wx.CallAfter(
+        #     html.LoadPage, "http://wxwidgets.org/manuals/2.6.2/wx_wxbutton.html")
+
         wx.CallAfter(
-            html.LoadPage, "http://wxwidgets.org/manuals/2.6.2/wx_wxbutton.html")
+            html.LoadPage, "https://www.naver.com")
 
 app = wx.PySimpleApp()
 frm = MyHtmlFrame(None, "Simple HTML Browser")

@@ -2,7 +2,7 @@ import wx
 from blockwindow import BlockWindow
 
 labels = "one two three four five six seven eight nine".split()
-flags = {"one": wx.BOTTOM, "two": wx.ALL, "three": wx.TOP, 
+flags = {"one": wx.ALIGN_LEFT, "two": wx.ALL, "three": wx.TOP,
          "four": wx.LEFT, "five": wx.ALL, "six": wx.RIGHT, 
          "seven": wx.BOTTOM | wx.TOP, "eight": wx.ALL,
          "nine": wx.LEFT | wx.RIGHT}

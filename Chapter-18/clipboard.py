@@ -24,7 +24,7 @@ class MyFrame(wx.Frame):
 
         # create the controls
         self.t1 = wx.TextCtrl(p, -1, t1_text,
-                              style=wx.TE_MULTILINE|wx.HSCROLL)
+                              style=wx.TE_MULTILINE|wx.HSCROLL|wx.ALIGN_RIGHT)
         self.t2 = wx.TextCtrl(p, -1, t2_text,
                               style=wx.TE_MULTILINE|wx.HSCROLL)
         copy = wx.Button(p, -1, "Copy")
